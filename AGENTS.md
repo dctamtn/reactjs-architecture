@@ -9,6 +9,11 @@ Read the skill that matches the task before editing:
 | Folders, boundaries, state, data flow | `skills/react-architecture/SKILL.md` |
 | A React component | `skills/react-component/SKILL.md` |
 | Chat, costing, prompts, tools, workflows, providers | `skills/ai-feature/SKILL.md` |
+| Which costing tool runs, and how results are shown | `skills/costing-chat/SKILL.md` |
+| RFQ facets, summary, or line details | `skills/costing-rfq/SKILL.md` |
+| CM/YY breakdown | `skills/costing-cm-yy/SKILL.md` |
+| Detail prices or sell-through | `skills/costing-detail-prices/SKILL.md` |
+| A file under `server/` | `server/SKILL.md` and that folder's `SKILL.md` |
 | Review before finishing | `skills/code-review/SKILL.md` |
 
 ## Decision

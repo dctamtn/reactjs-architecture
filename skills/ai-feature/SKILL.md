@@ -42,14 +42,14 @@ Read provider keys inside `server/env.ts`. Reject the change if a key is prefixe
 
 ## First slice, when confirmed
 
-Add only the costing chatbot:
+Add only the costing chatbot. Follow the costing skills instead of re-deriving the TPM tools:
 
-- RFQ summary, RFQ details, RFQ query params, CM/YY, detail prices
-- One costing system prompt
-- Zod schemas for each tool's arguments and result
-- Chat UI that streams through the app API
-- Costing components for those results
+- `skills/costing-chat/SKILL.md` for tool choice, context reuse, and status
+- `skills/costing-rfq/SKILL.md` for facets, grouped summary, and line details
+- `skills/costing-cm-yy/SKILL.md` for the four CM/YY sheets
+- `skills/costing-detail-prices/SKILL.md` for the price sheet
+- `server/SKILL.md` for which server folder receives each piece
 
-Leave orders, techpack search, trend engine, email, weather, and techpack page screens out of this slice.
+Leave orders, techpack search, trend engine, email, weather, RFQ creation, and techpack page screens out of this slice.
 
 When a registry gains its first entry, update `server/registries.test.ts`.
