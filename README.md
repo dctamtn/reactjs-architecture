@@ -1,16 +1,15 @@
-# React + Vite
+# Costing assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Browser app for a costing chatbot. AI providers, prompts, tools, and workflows live in `server/` and are not part of the Vite bundle.
 
-Currently, two official plugins are available:
+Read [AGENTS.md](./AGENTS.md) before changing architecture or adding a feature. Chat and costing behavior are not implemented yet.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```powershell
+npm run dev
+npm run typecheck
+npm run lint
+npm test
+npm run build
+```
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Provider secrets belong in the server process. Only `VITE_` variables are visible to the browser. `VITE_API_BASE_URL` is optional and must start with `http` when set.
